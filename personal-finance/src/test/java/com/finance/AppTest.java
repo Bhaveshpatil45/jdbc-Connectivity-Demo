@@ -1,4 +1,4 @@
-package com.finance.model;
+package com.finance;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
