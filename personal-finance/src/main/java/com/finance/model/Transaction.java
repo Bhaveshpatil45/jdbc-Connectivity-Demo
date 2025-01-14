@@ -5,10 +5,25 @@ import java.util.Date;
 public class Transaction {
     private long id;
     private double amount;
+    private String type;
+    //Expense
     private String category;
     private Date date;
     private String description;
-    private User user;
+    private Users users;
+
+    public Transaction() {
+    }
+
+    public Transaction(long id, double amount, String type, String category, Date date, String description, Users users) {
+        this.id = id;
+        this.amount = amount;
+        this.type = type;
+        this.category = category;
+        this.date = date;
+        this.description = description;
+        this.users = users;
+    }
 
     public long getId() {
         return id;
@@ -24,6 +39,14 @@ public class Transaction {
 
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getCategory() {
@@ -50,11 +73,24 @@ public class Transaction {
         this.description = description;
     }
 
-    public User getUser() {
-        return user;
+    public Users getUser() {
+        return users;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser(Users users) {
+        this.users = users;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id=" + id +
+                ", amount=" + amount +
+                ", type='" + type + '\'' +
+                ", category='" + category + '\'' +
+                ", date=" + date +
+                ", description='" + description + '\'' +
+                ", user=" + users +
+                '}';
     }
 }
