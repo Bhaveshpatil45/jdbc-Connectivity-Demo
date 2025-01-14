@@ -1,24 +1,22 @@
 package com.finance.model;
 
-public class Users {
-    private long id;
+public class User {
+    private int id;
     private String username;
     private String password;
 
-    public Users() {
-    }
-
-    public Users(long id, String username, String password) {
+    public User(int id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
     }
 
-    public long getId() {
+    // Getters and Setters
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -36,14 +34,5 @@ public class Users {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }
