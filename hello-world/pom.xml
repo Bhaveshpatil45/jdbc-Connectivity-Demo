@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>hello-world</artifactId>
+  <artifactId>personal-finance</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
